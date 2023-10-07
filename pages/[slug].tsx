@@ -3,7 +3,7 @@ import fetchMeta from "fetch-meta-tags";
 import Head from "next/head";
 import { useRouter } from "next/router";
 import React, { useEffect } from "react";
-import { domain } from "../../domain";
+import { domain } from "../domain";
 
 export async function getServerSideProps(context: any) {
   const userAgent = context.req.headers["user-agent"];
